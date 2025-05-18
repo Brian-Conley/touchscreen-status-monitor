@@ -1,0 +1,11 @@
+[package]
+name = "touchscreen-status-monitor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+glib = "0.20.10"
+gtk = "0.18.2"
+home = "0.5.11"
+image = "0.25.6"
+tray-icon = "0.20.1"
