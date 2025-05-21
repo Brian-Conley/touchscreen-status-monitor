@@ -51,7 +51,7 @@ fn main() {
         }
     });
 
-    glib::source::idle_add_local(move || {
+    glib::source::timeout_add_local(Duration::from_millis(1000), move || {
         if let Ok(iconPath) = rx.try_recv() {
             let icon = load_icon(&iconPath);
             trayIcon.set_icon(Some(icon)).unwrap();
